@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="962e4350-566e-479c-9bc2-2b660fb69e75" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/djangoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="962e4350-566e-479c-9bc2-2b660fb69e75" name="Changes" comment="добавил шаблон со статикой">
+      <change afterPath="$PROJECT_DIR$/main/templates/main/demand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/main/geography.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/main/skills.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/main/vacancies.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +103,7 @@
       <workItem from="1704246536610" duration="18694000" />
       <workItem from="1704409819515" duration="20000" />
       <workItem from="1704409847801" duration="65000" />
-      <workItem from="1704689601420" duration="2688000" />
+      <workItem from="1704689601420" duration="7864000" />
     </task>
     <task id="LOCAL-00001" summary="CreateProject">
       <option name="closed" value="true" />
@@ -128,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704249563267</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="добавил шаблон со статикой">
+      <option name="closed" value="true" />
+      <created>1704694701428</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704694701428</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CreateProject" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="добавил шаблон со статикой" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил шаблон со статикой" />
   </component>
 </project>

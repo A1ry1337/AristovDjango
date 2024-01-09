@@ -17,12 +17,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from main.views import index, demand, geography, skills
+from main.views import index, demand, geography, skills, vacancies
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
     path('demand/', demand),
     path('geography/', geography),
     path('skills/', skills),
-    path('vacancies/', skills)
+    path('vacancies/', vacancies)
 ]

@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="962e4350-566e-479c-9bc2-2b660fb69e75" name="Changes" comment="добавил шаблон со статикой">
-      <change afterPath="$PROJECT_DIR$/main/templates/main/demand.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/main/geography.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/main/skills.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/main/vacancies.html" afterDir="false" />
+    <list default="true" id="962e4350-566e-479c-9bc2-2b660fb69e75" name="Changes" comment="fix шаблона">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/demand.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/demand.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/geography.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/geography.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/skills.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/vacancies.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/vacancies.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,24 +40,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.djangoProject.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.djangoProject.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="djangoProject" type="Python.DjangoServer" factoryName="Django server">
       <module name="djangoProject" />
@@ -103,7 +103,8 @@
       <workItem from="1704246536610" duration="18694000" />
       <workItem from="1704409819515" duration="20000" />
       <workItem from="1704409847801" duration="65000" />
-      <workItem from="1704689601420" duration="7864000" />
+      <workItem from="1704689601420" duration="8112000" />
+      <workItem from="1704887906835" duration="3529000" />
     </task>
     <task id="LOCAL-00001" summary="CreateProject">
       <option name="closed" value="true" />
@@ -137,7 +138,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704694701428</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="добавил дополнительные шаблоны">
+      <option name="closed" value="true" />
+      <created>1704796637032</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704796637032</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix шаблона">
+      <option name="closed" value="true" />
+      <created>1704796783235</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704796783235</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +164,8 @@
     <MESSAGE value="CreateProject" />
     <MESSAGE value="test" />
     <MESSAGE value="добавил шаблон со статикой" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил шаблон со статикой" />
+    <MESSAGE value="добавил дополнительные шаблоны" />
+    <MESSAGE value="fix шаблона" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix шаблона" />
   </component>
 </project>

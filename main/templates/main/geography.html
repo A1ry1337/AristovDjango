@@ -37,12 +37,12 @@
           </div>
         <ul>
           <<li><p class="menyu">Меню</p></li>
-            <li><a href="/static/vendor/MainPage.html">WEB-Разработка: Ваш Путь к Цифровой Экспертности</a></li>
-            <li><a href="/static/vendor/demand.html">Востребованность</a></li>
-            <li><a href="/static/vendor/geography.html">География</a></li>
-            <li><a href="/static/vendor/skills.html">Навыки</a></li>
-            <li><a href="/static/vendor/vacancies.html">Вакансии</a></li>
-            <li><a href="/static/vendor/administration.html">Система администрирования</a></li>
+		        <li><a href="{% url 'index' %}">WEB-Разработка: Ваш Путь к Цифровой Экспертности</a></li>
+		        <li><a href="{% url 'demand' %}">Востребованность</a></li>
+		        <li><a href="{% url 'geography' %}">География</a></li>
+		        <li><a href="{% url 'skills' %}">Навыки</a></li>
+		        <li><a href="{% url 'vacancies' %}">Вакансии</a></li>
+                <li><a href="/static/vendor/administration.html">Система администрирования</a></li>
         </ul>
       </div>
       <!-- Подключаем файл скрипта -->

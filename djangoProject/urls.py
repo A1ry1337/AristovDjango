@@ -20,9 +20,9 @@ from django.urls import path
 from main.views import index, demand, geography, skills, vacancies
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    path('demand/', demand),
-    path('geography/', geography),
-    path('skills/', skills),
-    path('vacancies/', vacancies)
+    path('', index, name='index'),
+    path('demand/', demand, name='demand'),
+    path('geography/', geography, name='geography'),
+    path('skills/', skills, name='skills'),
+    path('vacancies/', vacancies, name='vacancies')
 ]

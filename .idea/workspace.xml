@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="962e4350-566e-479c-9bc2-2b660fb69e75" name="Changes" comment="fix шаблона">
+    <list default="true" id="962e4350-566e-479c-9bc2-2b660fb69e75" name="Changes" comment="делаем ссылки на шаблоны не статичными,&#10;а динамическими внутри джанго">
+      <change afterPath="$PROJECT_DIR$/main/analytics.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/demand.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/demand.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/geography.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/geography.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/skills.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/vacancies.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/vacancies.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -47,7 +43,7 @@
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -104,7 +100,8 @@
       <workItem from="1704409819515" duration="20000" />
       <workItem from="1704409847801" duration="65000" />
       <workItem from="1704689601420" duration="8112000" />
-      <workItem from="1704887906835" duration="3529000" />
+      <workItem from="1704887906835" duration="8377000" />
+      <workItem from="1704965226080" duration="8754000" />
     </task>
     <task id="LOCAL-00001" summary="CreateProject">
       <option name="closed" value="true" />
@@ -154,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704796783235</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="делаем ссылки на шаблоны не статичными,&#10;а динамическими внутри джанго">
+      <option name="closed" value="true" />
+      <created>1704897072765</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704897072765</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +171,7 @@
     <MESSAGE value="добавил шаблон со статикой" />
     <MESSAGE value="добавил дополнительные шаблоны" />
     <MESSAGE value="fix шаблона" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix шаблона" />
+    <MESSAGE value="делаем ссылки на шаблоны не статичными,&#10;а динамическими внутри джанго" />
+    <option name="LAST_COMMIT_MESSAGE" value="делаем ссылки на шаблоны не статичными,&#10;а динамическими внутри джанго" />
   </component>
 </project>

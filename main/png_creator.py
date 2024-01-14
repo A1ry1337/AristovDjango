@@ -39,7 +39,7 @@ def plot_table_dynamics(data_dict, file_name):
     ax.axis('off')
 
     # Устанавливаем размер шрифта
-    font_size = 18
+    font_size = 20
 
     # Устанавливаем фиксированный размер рамки
     bbox_props = dict(facecolor='none', edgecolor='#00ff00', boxstyle='round', linewidth=2)

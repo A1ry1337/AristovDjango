@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="962e4350-566e-479c-9bc2-2b660fb69e75" name="Changes" comment="функции для создания изображений">
-      <change afterPath="$PROJECT_DIR$/main/scripts/import_data.py" afterDir="false" />
+    <list default="true" id="962e4350-566e-479c-9bc2-2b660fb69e75" name="Changes" comment="удалил импорт в бд т.к. не буду ее использовать.&#10;Добавил функцию для парсинга курса валют в рублях с 2001 по 2024 год">
+      <change afterPath="$PROJECT_DIR$/main/scripts/vacancies.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/analytics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/png_creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/png_creator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +42,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "Django Server.djangoProject.executor": "Run",
     "Python.import_data.executor": "Run",
+    "Python.search_currency.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -107,7 +105,7 @@
       <workItem from="1704689601420" duration="8112000" />
       <workItem from="1704887906835" duration="8377000" />
       <workItem from="1704965226080" duration="17148000" />
-      <workItem from="1705154872303" duration="4707000" />
+      <workItem from="1705154872303" duration="9030000" />
     </task>
     <task id="LOCAL-00001" summary="CreateProject">
       <option name="closed" value="true" />
@@ -181,7 +179,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705058463461</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Решил делать аналитику не через орм бд, т.к. слишком долгая обработка 7млн вакансий. Удалил файл аналитику. Буду обрабатыватывать всю аналитику через скрипты которые помещу в папку scripts">
+      <option name="closed" value="true" />
+      <created>1705236093100</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705236093100</updated>
+    </task>
+    <task id="LOCAL-00011" summary="удалил импорт в бд т.к. не буду ее использовать.&#10;Добавил функцию для парсинга курса валют в рублях с 2001 по 2024 год">
+      <option name="closed" value="true" />
+      <created>1705239859431</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705239859431</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,19 +210,12 @@
     <MESSAGE value="делаем ссылки на шаблоны не статичными,&#10;а динамическими внутри джанго" />
     <MESSAGE value="Создал классы для аналитики вакансий" />
     <MESSAGE value="функции для создания изображений" />
-    <option name="LAST_COMMIT_MESSAGE" value="функции для создания изображений" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main/scripts/import_data.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Решил делать аналитику не через орм бд, т.к. слишком долгая обработка 7млн вакансий. Удалил файл аналитику. Буду обрабатыватывать всю аналитику через скрипты которые помещу в папку scripts" />
+    <MESSAGE value="удалил импорт в бд т.к. не буду ее использовать.&#10;Добавил функцию для парсинга курса валют в рублях с 2001 по 2024 год" />
+    <option name="LAST_COMMIT_MESSAGE" value="удалил импорт в бд т.к. не буду ее использовать.&#10;Добавил функцию для парсинга курса валют в рублях с 2001 по 2024 год" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/djangoProject$search_currency.coverage" NAME="search_currency Coverage Results" MODIFIED="1705237918012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/scripts" />
     <SUITE FILE_PATH="coverage/djangoProject$import_data.coverage" NAME="import_data Coverage Results" MODIFIED="1705170011550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/scripts" />
   </component>
 </project>

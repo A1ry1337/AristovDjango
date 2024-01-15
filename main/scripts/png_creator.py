@@ -28,10 +28,12 @@ def plot_dynamics(average_salary_dynamics, output_filename, x_label, y_label):
     plt.gca().xaxis.label.set_color('white')
     plt.gca().yaxis.label.set_color('white')
 
+    # Задаем тики на оси X вручную
+    plt.xticks(years)
+
     # Сохраняем график с прозрачным фоном
     plt.savefig(output_filename, format='png', bbox_inches='tight', transparent=True)
     plt.close()
-
 
 def plot_table_dynamics(data_dict, file_name):
     # Создаем изображение с прозрачным фоном

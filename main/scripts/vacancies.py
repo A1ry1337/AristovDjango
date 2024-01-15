@@ -1,6 +1,7 @@
 import csv
 from datetime import datetime
-
+from djangoProject.settings import BASE_DIR
+from collections import Counter
 
 class VacancyManager:
     def __init__(self):
@@ -51,7 +52,7 @@ class VacancyManager:
         return currency_rates.get(date_str, {}).get(currency)
 
 # Все зарплаты переводит в рубли
-    def update_salary_in_rubles(self, currency_rates_file='currency.csv'):
+    def update_salary_in_rubles(self, currency_rates_file=BASE_DIR / 'static/analytics/currency.csv'):
         # Загрузка курсов валют из файла
         currency_rates = self.load_currency_rates(currency_rates_file)
 
@@ -71,6 +72,7 @@ class VacancyManager:
 
         # Замена списка вакансий на обновленный
         self.vacancies = updated_vacancies
+        return self
 
 # Получаем словарик год - средняя зарплата
     def get_avg_salary(self):
@@ -89,6 +91,20 @@ class VacancyManager:
         average_salary_dynamics = {year: sum(salaries) / len(salaries) for year, salaries in salary_dynamics.items()}
 
         return average_salary_dynamics
+
+    # Метод возвращает словарь год - количество вакансий
+    def get_vacancy_count_by_year(self):
+        # Словарь для хранения количества вакансий по годам
+        vacancy_count_by_year = Counter()
+
+        for vacancy in self.vacancies:
+            # Получение года из даты публикации вакансии
+            year = datetime.strptime(vacancy.published_at, '%Y-%m-%dT%H:%M:%S%z').year
+
+            # Увеличение счетчика вакансий для указанного года
+            vacancy_count_by_year[year] += 1
+
+        return vacancy_count_by_year
 
 
 class Vacancy:

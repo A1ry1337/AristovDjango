@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="962e4350-566e-479c-9bc2-2b660fb69e75" name="Changes" comment="Добавил скрипт для создания пнг картинок в виде таблице или графика">
-      <change afterPath="$PROJECT_DIR$/main/scripts/create_png.py" afterDir="false" />
+    <list default="true" id="962e4350-566e-479c-9bc2-2b660fb69e75" name="Changes" comment="Добавил скрипт для создания графиков и таблицы для страницы 'Востребованность' + пофиксил всякие баги">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/png_creator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/scripts/png_creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/scripts/png_creator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/scripts/vacancies.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/scripts/vacancies.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/demand.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/demand.html" afterDir="false" />
     </list>
@@ -47,6 +44,7 @@
     "Django Server.djangoProject.executor": "Run",
     "Python.create_png.executor": "Run",
     "Python.import_data.executor": "Run",
+    "Python.png_creator.executor": "Run",
     "Python.search_currency.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -110,7 +108,8 @@
       <workItem from="1704689601420" duration="8112000" />
       <workItem from="1704887906835" duration="8377000" />
       <workItem from="1704965226080" duration="17148000" />
-      <workItem from="1705154872303" duration="19940000" />
+      <workItem from="1705154872303" duration="26100000" />
+      <workItem from="1705411417276" duration="10610000" />
     </task>
     <task id="LOCAL-00001" summary="CreateProject">
       <option name="closed" value="true" />
@@ -216,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705242129685</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Добавил скрипт для создания графиков и таблицы для страницы 'Востребованность' + пофиксил всякие баги">
+      <option name="closed" value="true" />
+      <created>1705334780509</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705334780509</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,11 +242,13 @@
     <MESSAGE value="удалил импорт в бд т.к. не буду ее использовать.&#10;Добавил функцию для парсинга курса валют в рублях с 2001 по 2024 год" />
     <MESSAGE value="Добавил класс с менеджером вакансий" />
     <MESSAGE value="Добавил скрипт для создания пнг картинок в виде таблице или графика" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил скрипт для создания пнг картинок в виде таблице или графика" />
+    <MESSAGE value="Добавил скрипт для создания графиков и таблицы для страницы 'Востребованность' + пофиксил всякие баги" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил скрипт для создания графиков и таблицы для страницы 'Востребованность' + пофиксил всякие баги" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/djangoProject$png_creator.coverage" NAME="png_creator Coverage Results" MODIFIED="1705437000416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/scripts" />
     <SUITE FILE_PATH="coverage/djangoProject$search_currency.coverage" NAME="search_currency Coverage Results" MODIFIED="1705237918012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/scripts" />
-    <SUITE FILE_PATH="coverage/djangoProject$create_png.coverage" NAME="create_png Coverage Results" MODIFIED="1705260989441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/scripts" />
+    <SUITE FILE_PATH="coverage/djangoProject$create_png.coverage" NAME="create_png Coverage Results" MODIFIED="1705439892857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/scripts" />
     <SUITE FILE_PATH="coverage/djangoProject$import_data.coverage" NAME="import_data Coverage Results" MODIFIED="1705170011550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/scripts" />
   </component>
 </project>

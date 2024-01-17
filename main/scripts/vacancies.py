@@ -138,7 +138,7 @@ class Vacancy:
             return None
 
     def is_valid(self):
-        return all([self.name, self.key_skills, self.salary, self.salary_currency, self.area_name, self.published_at])
+        return all([self.name, self.salary, self.salary_currency, self.area_name, self.published_at])
 
     def __repr__(self):
         key_skills_str = ''.join(self.key_skills).replace('\n', ', ') if self.key_skills else ""

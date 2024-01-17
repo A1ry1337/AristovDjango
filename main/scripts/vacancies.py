@@ -66,9 +66,11 @@ class VacancyManager:
                     # Конвертация и форматирование зарплаты в рубли
                     vacancy.salary = format(vacancy.salary * rate, '.1f')
                     vacancy.salary_currency = 'RUR'
-                    updated_vacancies.append(vacancy)
+                    if float(vacancy.salary) < 400000:  # Удаляю фейк стаитистику
+                        updated_vacancies.append(vacancy)
             else:
-                updated_vacancies.append(vacancy)
+                if float(vacancy.salary) < 400000:  # Удаляю фейк стаитистику
+                    updated_vacancies.append(vacancy)
 
         # Замена списка вакансий на обновленный
         self.vacancies = updated_vacancies

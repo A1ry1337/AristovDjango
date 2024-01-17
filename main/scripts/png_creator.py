@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
+import re
 
 
 # Динамика по словарю(ключ - значение например 'год - кол-во вакансий')
@@ -35,6 +36,7 @@ def plot_dynamics(average_salary_dynamics, output_filename, x_label, y_label):
     plt.savefig(output_filename, format='png', bbox_inches='tight', transparent=True)
     plt.close()
 
+
 def plot_table_dynamics(data_dict, file_name):
     # Создаем изображение с прозрачным фоном
     fig, ax = plt.subplots(figsize=(8, 1))
@@ -56,3 +58,46 @@ def plot_table_dynamics(data_dict, file_name):
 
     # Очищаем график
     plt.close()
+
+
+def create_salary_dynamics_chart(city_salary_dict, output_filename, xlabel, ylabel, title, top_n=15):
+    # Получаем первые N элементов словаря
+    cities = list(city_salary_dict.keys())[:top_n]
+    average_salaries = list(city_salary_dict.values())[:top_n]
+
+    fig, ax = plt.subplots(figsize=(15, 6))
+    bar_width = 0.8
+
+    # Построение графика с прозрачным фоном
+    bars = ax.bar(range(len(cities)), average_salaries, color='green', width=bar_width, alpha=0.7)
+
+    # Убираем скобочные конструкции и их содержимое из городов
+    cities_without_brackets = [re.sub(r'\([^)]*\)', '', city) for city in cities]
+
+    plt.xticks(range(len(cities)), cities_without_brackets, rotation=45, ha='right', color='white')  # Белый текст по оси X
+    plt.yticks(color='white')  # Белый текст по оси Y
+
+    plt.xlabel(xlabel, color='white')
+    plt.ylabel(ylabel, color='white')
+    plt.title(title, color='white')
+
+    # Добавление подписей для каждого столбца
+    for bar in bars:
+        yval = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2, yval, round(yval, 2), ha='center', va='bottom', color='white')
+
+    # Устанавливаем верхнюю границу оси Y чуть выше максимальной зарплаты
+    max_salary = max(average_salaries)
+    plt.ylim(top=max_salary * 1.1)
+
+    # Установка прозрачного фона
+    ax.set_facecolor('none')
+
+    # Установка белого цвета границы графика
+    for spine in ax.spines.values():
+        spine.set_edgecolor('white')
+
+    # Сохранение графика в файл с прозрачным фоном
+    plt.tight_layout()
+    plt.savefig(output_filename, transparent=True)
+    plt.show()

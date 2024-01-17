@@ -2,7 +2,7 @@ import csv
 from datetime import datetime
 from djangoProject.settings import BASE_DIR
 from collections import Counter
-
+from operator import itemgetter
 class VacancyManager:
     def __init__(self):
         self.vacancies = []
@@ -107,6 +107,44 @@ class VacancyManager:
             vacancy_count_by_year[year] += 1
 
         return vacancy_count_by_year
+
+    # Метод возвращает словарь город - среднюю зарплату вакансий
+    def get_avg_salary_by_city(self):
+        # Словарь для хранения динамики уровня зарплат по городам
+        salary_dynamics = {}
+
+        for vacancy in self.vacancies:
+            if vacancy.salary_currency == 'RUR':
+                # Получение города из вакансии
+                city = vacancy.area_name
+
+                # Добавление зарплаты в словарь
+                salary_dynamics.setdefault(city, []).append(float(vacancy.salary))
+
+        # Вычисление средней зарплаты для каждого города
+        average_salary_dynamics = {city: sum(salaries) / len(salaries) for city, salaries in salary_dynamics.items()}
+
+        # Сортировка словаря по убыванию средней зарплаты
+        sorted_avg_salary_dynamics = dict(sorted(average_salary_dynamics.items(), key=itemgetter(1), reverse=True))
+
+        return sorted_avg_salary_dynamics
+
+    # Метод возвращает словарь город - количество вакансий
+    def get_vacancy_count_by_city(self):
+        # Словарь для хранения количества вакансий по городам
+        vacancy_count_by_city = Counter()
+
+        for vacancy in self.vacancies:
+            # Получение города из вакансии
+            city = vacancy.area_name
+
+            # Увеличение счетчика вакансий для указанного города
+            vacancy_count_by_city[city] += 1
+
+        # Сортировка словаря по убыванию количества вакансий
+        sorted_vacancy_count_by_city = dict(sorted(vacancy_count_by_city.items(), key=itemgetter(1), reverse=True))
+
+        return sorted_vacancy_count_by_city
 
 
 class Vacancy:

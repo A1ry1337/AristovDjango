@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="962e4350-566e-479c-9bc2-2b660fb69e75" name="Changes" comment="Новый метод для создания графика + фиксы">
+    <list default="true" id="962e4350-566e-479c-9bc2-2b660fb69e75" name="Changes" comment="Добавил пару методов для аналитки вакансий и скрипт для создания аналитки для вкладки &quot;География&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/scripts/create_png.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/scripts/create_png.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/scripts/vacancies.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/scripts/vacancies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/scripts/png_creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/scripts/png_creator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,7 @@
       <workItem from="1704887906835" duration="8377000" />
       <workItem from="1704965226080" duration="17148000" />
       <workItem from="1705154872303" duration="26100000" />
-      <workItem from="1705411417276" duration="19495000" />
+      <workItem from="1705411417276" duration="24366000" />
     </task>
     <task id="LOCAL-00001" summary="CreateProject">
       <option name="closed" value="true" />
@@ -239,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705520017692</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Добавил пару методов для аналитки вакансий и скрипт для создания аналитки для вкладки &quot;География&quot;">
+      <option name="closed" value="true" />
+      <created>1705522953868</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1705522953868</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,12 +268,13 @@
     <MESSAGE value="Добавил скрипт для создания графиков и таблицы для страницы 'Востребованность' + пофиксил всякие баги" />
     <MESSAGE value="фикс" />
     <MESSAGE value="Новый метод для создания графика + фиксы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Новый метод для создания графика + фиксы" />
+    <MESSAGE value="Добавил пару методов для аналитки вакансий и скрипт для создания аналитки для вкладки &quot;География&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил пару методов для аналитки вакансий и скрипт для создания аналитки для вкладки &quot;География&quot;" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/djangoProject$png_creator.coverage" NAME="png_creator Coverage Results" MODIFIED="1705437000416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/scripts" />
     <SUITE FILE_PATH="coverage/djangoProject$search_currency.coverage" NAME="search_currency Coverage Results" MODIFIED="1705237918012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/scripts" />
-    <SUITE FILE_PATH="coverage/djangoProject$create_png.coverage" NAME="create_png Coverage Results" MODIFIED="1705521579122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/scripts" />
+    <SUITE FILE_PATH="coverage/djangoProject$create_png.coverage" NAME="create_png Coverage Results" MODIFIED="1705573292678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/scripts" />
     <SUITE FILE_PATH="coverage/djangoProject$import_data.coverage" NAME="import_data Coverage Results" MODIFIED="1705170011550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/scripts" />
   </component>
 </project>

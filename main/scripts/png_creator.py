@@ -69,7 +69,7 @@ def create_salary_dynamics_chart(city_salary_dict, output_filename, xlabel, ylab
     bar_width = 0.8
 
     # Построение графика с прозрачным фоном
-    bars = ax.bar(range(len(cities)), average_salaries, color='green', width=bar_width, alpha=0.7)
+    bars = ax.bar(range(len(cities)), average_salaries, color='#00ff00', width=bar_width, alpha=0.7)
 
     # Убираем скобочные конструкции и их содержимое из городов
     cities_without_brackets = [re.sub(r'\([^)]*\)', '', city) for city in cities]
@@ -84,7 +84,7 @@ def create_salary_dynamics_chart(city_salary_dict, output_filename, xlabel, ylab
     # Добавление подписей для каждого столбца
     for bar in bars:
         yval = bar.get_height()
-        ax.text(bar.get_x() + bar.get_width()/2, yval, round(yval, 2), ha='center', va='bottom', color='white')
+        ax.text(bar.get_x() + bar.get_width()/2, yval, round(yval, 2), ha='center', va='bottom', color='#00ff00')
 
     # Устанавливаем верхнюю границу оси Y чуть выше максимальной зарплаты
     max_salary = max(average_salaries)

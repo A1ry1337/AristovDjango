@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+.main {
+    position: relative;
+    background: #000000;
+    overflow: hidden;
+    height: 1100px;
+}
+
+/* header */
+.header{
+    position: absolute;
+    width: 1501.45px;
+    height: 281.12px;
+    left: 100px;
+    top: 0;}
+
+/* logo */
+.logo{
+    position: absolute;
+    width: 234.98px;
+    height: 281.12px;
+    left: 50px;
+    top: 20px;
+
+    filter: drop-shadow(4px 4px 3.1px rgba(0, 0, 0, 0.36));}
+
+.register{
+    position: absolute;
+    width: 760px;
+    height: 96px;
+    left: 410px;
+    top: 0;
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 112%;
+    /* or 54px */
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.body {
+  position: absolute;
+  top: 150px;
+  left: 250px;
+
+}
+.profile{
+    position: absolute;
+    top: 150px;
+    left: 270px;
+}
+
+.passw{
+    position: absolute;
+    top: 300px;
+    left: 270px;
+}
+
+.register-button{
+    position: absolute;
+    top: 500px;
+    left: 440px;
+        transition: transform 0.3s ease; /* Добавление плавного перехода при изменении свойства transform */
+}
+
+.register-button:active {
+    transform: scale(0.9); /* Уменьшение масштаба при нажатии */
+}
+.icon-profile{
+    position: absolute;
+    top: 150px;
+    left: 140px;
+}
+.icon-passw{
+    position: absolute;
+    top: 300px;
+    left: 140px;
+}
+
+/* footer */
+.footer{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 10%;
+    top: 500px;    
+    }
+
+/* Аристов Михаил Николаевич РИ-220913 */
+.signature{position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 0;
+    top: 300px;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35.1605px;
+    line-height: 39px;
+    text-align: center;
+
+    color: #FFFFFF;
+    }
+.ellipse-1{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 320px;
+    top: 100px;
+}
+.ellipse-2{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 520px;
+    top: 200px;
+}
+.ellipse-3{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 0px;
+    top: 10px;
+}
+.ellipse-4{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 0px;
+    top: 400px;
+}
+.ellipse-5{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 700px;
+    top: 700px;
+}

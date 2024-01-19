@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    position: relative;
+    background: #000000;
+    overflow: hidden;
+    height: 3850px;
+}
+
+/* header */
+.header{
+    position: absolute;
+    width: 1501.45px;
+    height: 281.12px;
+    left: 100px;
+    top: 20px;}
+
+/* logo */
+.logo{
+    position: absolute;
+    width: 234.98px;
+    height: 281.12px;
+    left: 200px;
+    top: 20px;
+
+    filter: drop-shadow(4px 4px 3.1px rgba(0, 0, 0, 0.36));}
+
+/* бургер и крестик */
+.burger, .close-button {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+/* Стили для активного (нажатого) состояния бургера и крестика */
+.burger:active, .close-button:active {
+  transform: scale(0.9);
+}
+   /* меню */ 
+.menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Скрываем меню за пределами экрана */
+    width: 300px;
+    height: 100%;
+    background: #2F1242;
+    padding-top: 80px;
+    transition: left 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    display: block;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 112%;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0; /* Добавлено для сброса маргина */
+
+}
+.menu p {
+    display: block;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 112%;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0; /* Добавлено для сброса маргина */
+}
+
+
+/* Стили для активной ссылки (если нужно) */
+.menu a:hover {
+    color: #0B06DA; /* Цвет текста при наведении на ссылку */
+}
+
+
+.demand{
+    position: absolute;
+    width: 760px;
+    height: 96px;
+    left: 500px;
+    top: 200px;
+    text-align: center;
+}
+p {
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.body {
+  position: absolute;
+  top: 350px;
+  left: 250px;
+
+}
+
+.body p {
+
+}
+
+/* footer */
+.footer{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 250px;
+    top: 3400px;
+    }
+
+/* Аристов Михаил Николаевич РИ-220913 */
+.signature{position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 0;
+    top: 300px;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35.1605px;
+    line-height: 39px;
+    text-align: center;
+
+    color: #FFFFFF;
+    }
+.ellipse-1{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 320px;
+    top: 100px;
+}
+.ellipse-2{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 520px;
+    top: 200px;
+}
+.ellipse-3{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 0px;
+    top: 10px;
+}
+.ellipse-4{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 0px;
+    top: 400px;
+}
+.ellipse-5{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 700px;
+    top: 700px;
+}
+.ellipse-6{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 320px;
+    top: 1200px;
+}
+.ellipse-2{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 520px;
+    top: 1700px;
+}
+.ellipse-3{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 0px;
+    top: 2000px;
+}
+.ellipse-4{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 0px;
+    top: 2400px;
+}
+.ellipse-5{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 700px;
+    top: 3200px;
+}
+.rectangle {
+    width: 200px; 
+    height: 700px; 
+    margin-left: 240px;
+}
+.img-1{
+    margin-left: -360px;
+    height: 100px;
+    width: 1700px;
+}
+.img-2{
+    margin-left: -360px;
+    width: 1700px;
+    height: 100px; 
+}
+.img-3{
+    margin-left: -360px;
+    width: 1700px;
+    height: 100px; 
+}
+.img-4{
+    margin-left: -360px;
+    width: 1700px;
+    height: 100px; 
+}

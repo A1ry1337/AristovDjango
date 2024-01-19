@@ -1,0 +1,444 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    position: relative;
+    background: #000000;
+    overflow: hidden;
+    height: 5000px;
+}
+
+/* header */
+.header{
+    position: absolute;
+    width: 1501.45px;
+    height: 281.12px;
+    left: 100px;
+    top: 20px;}
+
+/* logo */
+.logo{
+    position: absolute;
+    width: 234.98px;
+    height: 281.12px;
+    left: 200px;
+    top: 20px;
+
+    filter: drop-shadow(4px 4px 3.1px rgba(0, 0, 0, 0.36));}
+
+/* бургер и крестик */
+.burger, .close-button {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+/* Стили для активного (нажатого) состояния бургера и крестика */
+.burger:active, .close-button:active {
+  transform: scale(0.9);
+}
+
+   /* меню */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Скрываем меню за пределами экрана */
+    width: 300px;
+    height: 100%;
+    background: #2F1242;
+    padding-top: 80px;
+    transition: left 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    display: block;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 112%;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0; /* Добавлено для сброса маргина */
+
+
+}
+.menu p {
+    display: block;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 112%;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0; /* Добавлено для сброса маргина */
+}
+
+
+/* Стили для активной ссылки (если нужно) */
+.menu a:hover {
+    color: #0B06DA; /* Цвет текста при наведении на ссылку */
+}
+.content {
+  padding: 20px;
+}
+
+
+/*body*/
+.body{
+    position: absolute;
+    width: 1752px;
+    height: 4274px;
+    left: -21px;
+    top: 257px;}
+/*WEB-Разработка: Ваш Путь к Цифровой Экспертности*/
+.text-7{
+        position: absolute;
+    width: 760px;
+    height: 96px;
+    left: calc(50% - 760px/2 - 9px);
+    top: 100px;
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 112%;
+    /* or 54px */
+    text-align: center;
+
+    color: #FFFFFF;}
+.ellipse-2{
+    position: absolute;
+    width: 760px;
+    height: 96px;
+    left: 300px;
+    top: 250px;
+}
+.ellipse-3{position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 150px;
+    top: 1350px;
+}
+
+/* image 1 */
+.image-1 {
+  margin-left: -100px;
+  margin-right: -200px;
+  position: absolute;
+  width: 110% ; /* Установка ширины в 100% */
+  min-width: 100%;
+  height: auto !important;
+  left: 0;
+  right: 0;
+  top: 300px;
+  filter: drop-shadow(-1px 10px 4px rgba(0, 0, 0, 0.25));
+ -webkit-mask: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 10%, #000 90%, rgba(0, 0, 0, 0) 100%);
+  mask: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 10%, #000 90%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Сегодня мы открываем вам двери...*/
+ .text-1{
+    position: absolute;
+    width: 558px;
+    height: 96px;
+    left: 1069px;
+    top: 376px;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+
+    color: #FFFFFF;}
+
+/* Почему Web-Разработка? Потому что это творческий процесс...*/
+.text-8{
+    position: absolute;
+    width: 1497px;
+    height: 197px;
+    left: calc(50% - 1497px/2 - 0.5px);
+    top: 920px;
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+
+    color: #FFFFFF;}
+/* Веб-Разработка — Это Творчество в Коде!*/
+.text-2{
+    position: absolute;
+    width: 1500px;
+    height: 149px;
+    left: 100px;
+    top: 1195px;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #FFFFFF;}
+/* Кодирование как Искусство!*/
+.text-3{
+    position: absolute;
+    width: 693px;
+    height: 399px;
+    left: 183px;
+    top: 1457px;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: right;
+
+    color: #FFFFFF;}
+.ellipse-4{
+    position: absolute;
+    width: 693px;
+    height: 399px;
+    left: 0;
+    top: 1400px;
+}
+.coding{
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: 1009px;
+    top: 1400px;
+
+    background: url(.png);}
+/* Технологический Арсенал в Ваших Руках!*/
+.text-4{position: absolute;
+    width: 693px;
+    height: 399px;
+    left: 828px;
+    top: 1942px;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+
+    color: #FFFFFF;}
+.ellipse-15{
+    position: absolute;
+    width: 693px;
+    height: 399px;
+    left: 650px;
+    top: 1942px;
+}
+.technological{
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: 183px;
+    top: 1885px;
+
+    background: url(.png);}
+/* Каждая Строка — Это Новая Возможность!*/
+.text-5{
+    position: absolute;
+    width: 690px;
+    height: 386px;
+    left: 183px;
+    top: 2433px;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: right;
+
+    color: #FFFFFF;}
+.ellipse-8{
+    position: absolute;
+    width: 690px;
+    height: 386px;
+    left: 0;
+    top: 2433px;
+}
+.each{
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: 1006px;
+    top: 2370px;
+
+    background: url(.png);}
+/* Бесконечные Возможности для Инноваций!*/
+.text-10{
+    position: absolute;
+    width: 688px;
+    height: 388px;
+    left: 828px;
+    top: 2917px;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+
+    color: #FFFFFF;}
+.ellipse-9{
+    position: absolute;
+    width: 688px;
+    height: 388px;
+    left: 600px;
+    top: 2917px;
+}
+.infinite{
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: 183px;
+    top: 2855px;
+
+    background: url(.png);
+    }
+/* От Создания Сайтов до Работы с Базами Данных!*/
+.text-11{
+    position: absolute;
+    width: 688px;
+    height: 384px;
+    left: 183px;
+    top: 3404px;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: right;
+
+    color: #FFFFFF;}
+.ellipse-6{
+    position: absolute;
+    width: 688px;
+    height: 384px;
+    left: 0;
+    top: 3404px;
+}
+.from{
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: 1004px;
+    top: 3340px;
+
+    background: url(.png);}
+/* Присоединяйтесь к Нам в Мире Бескрайних Возможностей!*/
+.text-6{
+    position: absolute;
+    width: 690px;
+    height: 360px;
+    left: 828px;
+    top: 3853px;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+
+    color: #FFFFFF;}
+.ellipse-7{
+    position: absolute;
+    width: 690px;
+    height: 360px;
+    left: 600px;
+    top: 3853px;
+}
+.join-us{
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: 183px;
+    top: 3825px;
+
+    background: url(.png);}
+/* Web-Разработка — это не просто профессия...*/
+.text-9{
+    position: absolute;
+    width: 1416px;
+    height: 171px;
+    left: calc(50% - 1416px/2);
+    top: 4360px;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35.1605px;
+    line-height: 39px;
+    text-align: center;
+
+    color: #FFFFFF;}
+/* footer */
+.footer{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 156px;
+    top: 4621px;
+    }
+
+/* Аристов Михаил Николаевич РИ-220913 */
+.signature{position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: calc(50% - 1416px/2);
+    top: 300px;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35.1605px;
+    line-height: 39px;
+    text-align: center;
+
+    color: #FFFFFF;
+    }
+.ellipse-1{
+    position: absolute;
+    width: 1416px;
+    height: 51px;
+    left: 320px;
+    top: 4750px;
+}
+
+
